@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        nav{
+            height:100px ;
+            background-color: aqua;
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+            
+            
+        }
+        .logo{
+           width: 40%;
+           padding-left: 200px;
+
+
+        }
+        .menu{
+            width: 40%;
+            justify-content: space-around;
+            display: flex;
+        }
+        .menu a{
+            text-decoration: none;
+            font-weight: bold;
+            color:rgb(1, 10, 10);
+            text-transform: uppercase;
+            position: relative;
+
+        
+        }
+        .menu a:before{
+            content: "";
+            position: absolute;
+            background-color: rgb(128, 18, 11);
+            height: 3px;
+            top:100%;
+            left:0;
+            width: 0%;
+            transition: 0.1s;
+        }
+        .menu a:hover:before{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="logo">
+        <h1>DEVELOPER</h1>
+    </div>
+    <div class="menu">
+        <a href="#">bablu</a>
+        <a href="#">bablu</a>
+        <a href="#">bablu</a>
+        <a href="#">bablu</a>
+        <a href="#">bablu</a>
+
+    </div>
+    </nav>
+</body>
+</html>
